@@ -80,6 +80,12 @@ void problem3()
 	std::cout << "Problem 3" << std::endl;
 
 	double cosTheta = 0.34202014332566873304409961468226;
+	double radians = glm::acos(cosTheta);
+	// glm::acos returns radians so I convert it with glm::degree
+	double degrees = glm::degrees(glm::acos(cosTheta));
+
+	std::cout << "Radians: " << radians << std::endl;
+	std::cout << "Degrees: " << degrees << std::endl;
 
 } // end Problem3
 
